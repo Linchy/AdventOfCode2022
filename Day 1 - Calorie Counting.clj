@@ -2,7 +2,7 @@
   (if (empty? str) 0 (Integer/parseInt str)))
 
 ; part 1 - 68292
-(with-open [reader (clojure.java.io/reader "D:\\Development\\AdventOfCode\\Data\\Day 1.txt")]
+(with-open [reader (clojure.java.io/reader "D:\\Development\\AdventOfCode2022\\Data\\Day 1.txt")]
   (let [lines (doall (line-seq reader))
         groups (partition-by empty? lines)
         sums (map #(reduce + (map parseInt %)) groups)
@@ -10,7 +10,7 @@
     max))
 
 ; part 2
-(with-open [reader (clojure.java.io/reader "D:\\Development\\AdventOfCode\\Data\\Day 1.txt")]
+(with-open [reader (clojure.java.io/reader "D:\\Development\\AdventOfCode2022\\Data\\Day 1.txt")]
   (let [lines (doall (line-seq reader))
         groups (partition-by empty? lines)
         sums (map #(reduce + (map parseInt %)) groups)
