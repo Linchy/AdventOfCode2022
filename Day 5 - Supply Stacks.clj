@@ -1,4 +1,4 @@
-; thoughts: when the mutable/procedural route with this with the use of atom,
+; thoughts: went the mutable/procedural route with this problem, via the use of atom,
 ;           swap!, compare-and-set! and dorun, dotimes etc. Turns out quite difficult
 ;           and messy to write clojure this way
 
