@@ -27,7 +27,7 @@
         dest-updated (vec (concat @dest items))]
     (swap! source subvec 0 unmoved-count)
     (compare-and-set! dest @dest dest-updated)
-    (println (str items "\r\n" @source "\r\n" @dest "\r\n"))
+    ;(println (str items "\r\n" @source "\r\n" @dest "\r\n"))
     ))
 
 (defn get-result [stacks]
